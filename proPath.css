@@ -1,31 +1,31 @@
  @font-face {
     font-family: "kronaOne";
-    src: url(/proPath/fonts/KronaOne-Regular.ttf);
+    src: url(https://rajvin23.github.io/ProPathInfohub/fonts/KronaOne-Regular.ttf);
 }
 
     @font-face{
     font-family: "Poppins";
-    src: url(/proPath/fonts/Poppins/Poppins-Regular.ttf);
+    src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Regular.ttf);
 }
  
 @font-face{
     font-family: "Poppins-SemiBold";
-    src: url(/proPath/fonts/Poppins/Poppins-SemiBold.ttf);
+    src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-SemiBold.ttf);
 }
 
 @font-face{
     font-family: "Poppins-Thin";
-    src: url(/proPath/fonts/Poppins/Poppins-Light.ttf);
+    src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Light.ttf);
 } 
 
 @font-face{
   font-family: "Poppins-bold";
-  src: url(/proPath/fonts/Poppins/Poppins-Medium.ttf);
+  src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 @font-face {
   font-family: "PoppinsMedium";
-  src: url(/propath/fonts/Poppins/Poppins-Medium.ttf);
+  src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Medium.ttf);
 }
 
 .firstPage{
