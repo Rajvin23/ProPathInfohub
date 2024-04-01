@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paragraph Reveal Animation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+            
+        <div class="reveal">
+          <div><img src="Ellipse 26.svg" id="circle1"></div>
+            <div><img src="Ellipse 27.svg" id="circle2"></div>
+              <div><img src="Ellipse 28.svg" id="circle3"></div>
+           
+      </div>
+      <div class="revealP">
+        
+      </div>
+      
+
+</body>
+</html>
+
+
+<style>
+
+body {
+   background-color: rgb(61, 9, 84);
+}
+
+.reveal {
+  transform: translateY(-500px);
+  transition: transform 1.8s;
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+   
+}
+
+
+
+.reveal.revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.revealP1 .revealP2 .revealP3 .revealP4 .revealedP {
+  opacity: 1;
+  transform: translateX(0);
+  translate: translateY(0);
+}
+
+.revealP1 {
+  transform: translateX(-500px);
+  transition: transform 1.8s;
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.revealP2 {
+  transform: translateX(500px);
+  transition: transform 1.8s;
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.reveal3 {
+  transform: translateY(-500px);
+  transition: transform 1.8s;
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+.reveal4 {
+  transform: translateY(500px);
+  transition: transform 1.8s;
+  position: relative;
+  padding-top: 20%;
+  padding-bottom: 20%;
+}
+
+
+#circle1{
+ position: absolute;
+ top: 0;
+ left: 220px;
+}
+
+#circle2{
+  position: absolute;
+  top: 0;
+  left: 90px;
+}
+
+#circle3{
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+
+</style>
+
+<script>
+
+const paragraphs = document.querySelectorAll('.reveal');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('revealed');
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+paragraphs.forEach(paragraph => {
+  observer.observe(paragraph);
+});
+
+</script>

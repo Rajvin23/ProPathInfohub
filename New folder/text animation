@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paragraph Animation</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<img src="group.svg">
+</body>
+</html>
+
+
+<style>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 200vh; /* Ensure there's enough scrollable content */
+  background: radial-gradient(circle at center, palevioletred, transparent 50%);
+}
+
+</style>
