@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mainhome</title>
+    <title>textMainhome</title>
     <link rel="stylesheet" href="proPath.css">
     <link href="script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,12 +12,17 @@
 <body>
     <div class="heading">    
     <div class="logoNname">
-        <img id="logo" src="logo.png">
-        <span class="propath">ProPath</span>        
-        <a class="anchor_tag" href="#" id="services">Services</a>
-        <img src="Frame 45.svg" alt="">
-        </div>  
-             
+        <img id="logo" src="Group 34.svg">        
+        <a id="open-services" class="services">Services</a>
+        <div id="image-container" style="display: none;">
+          <img src="Frame 125.svg" alt="Image" id="image" />
+          
+        </div>
+        </div> 
+        <div class="aniNgif"> 
+        <img src="giffycanvas.gif" id="gif">
+        <img src="Animation - 1712740459019.gif" alt="" id="animation">
+             </div>
             <div class="navigation">        
                <a class="anchor_tag" href="#">Work</a>
                <a class="anchor_tag" href="#">About Us</a>
@@ -69,7 +74,6 @@
                          <a href="#" id="open-popup3">@know more</a>
                         </div></div>
                     </div>            
-
                     <div class="container">
     
                     </div>
@@ -343,6 +347,27 @@ function closePopup() {
 }
 
 
+document.querySelector("#open-services").addEventListener("click", function () {
+        document.querySelector(".services").classList.add("active");
+        document.querySelector(".bgblack").classList.add("visible");
+    }
+    );
+
+
+document.addEventListener("DOMContentLoaded", function() {
+  const word = document.querySelector(".clickable-word");
+  const imageContainer = document.getElementById("image-container");
+  const image = document.getElementById("image");
+
+  word.addEventListener("click", function() {
+    imageContainer.style.display = "block";
+  });
+
+  imageContainer.addEventListener("click", function() {
+    imageContainer.style.display = "none";
+  });
+});
+
 
     </script>
 
@@ -377,17 +402,16 @@ function closePopup() {
   src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Medium.ttf);
 }
 
-.firstPage{
-  margin-top: -100px;
-}
+
 
 body{
   overflow-x: hidden;
   margin: 0; 
   background-image: url("background.png");
     color: white;
-    
 }
+
+
 
 .initial{
   font-size: 4rem;
@@ -780,6 +804,12 @@ h2{
   position: absolute;
   top: 0;
   left: 20px;
+}
+
+.services{  
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .popup{

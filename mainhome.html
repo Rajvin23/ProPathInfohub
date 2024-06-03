@@ -14,9 +14,12 @@
 <body>
     <div class="heading">
         <div class="logoNname">
-            <img id="logo" src="logo.png">
-            <span class="propath">ProPath</span>
-            <a class="anchor_tag" href="#" id="services">Services</a>
+            <img id="logo" src="Group 34.svg">
+            <div>
+            <span class="clickable-word">services</span>
+            <div id="image-container" style="display: none;">
+                <img src="Frame 125.svg" alt="Image" id="image" />
+              </div></div>
             <img src="Frame 45.svg" alt="">
         </div>
 
@@ -48,7 +51,7 @@
                     <p>Crafting unique and beautiful experiences through design, website development</p>
                 </div>
             </div>
-            <img src="Group 135.svg" alt="">
+            <img src="Group 135 (1).svg" alt="">
 
             <div class="next">
                 <div class="small">
@@ -86,14 +89,24 @@
                     </div>
                 </div>
             </div>
+        
 
-            <div class="container">
-
+           <div class="parent">
+            <div class="child">
+                <p class="large">Achieve exceptional results with our services</p>
+                <p class="small">So much good stuff, this will be that last time you search for a design & photography solution!</p>
             </div>
+        <div class="aniNgif"> 
+            <img src="giffycanvas.gif" id="gif">
+            <img src="Animation - 1712740459019.gif" alt="" id="animation">
+        </div> </div>
             
 
             <img src="image 48.svg" alt="" id="bar">
-            <img src="image 1195.svg" alt="" id="wordCollage">
+
+            <div class="wordCollage">
+                <p>AT THE <span class="violet">HEIGHT</span> OUR WORK IS AN AGILE PROCESS THAT EMPOWERS US TO SWIFTLY AND EFFICIENTLY RESOND TO ANY <span class="violet">CHANGES</span> OR <span class="violet">CHALLENGES</span> THAT MAY ARISE. OUR TEAM COLLABRATES WITH SHARED SENSE OF PASSION AND <span class="violet">ENJOYMENT</span>, WHICH DRIVES US TO DELIVER EXCEPTIONAL RESULTS. TAKE A LOOK AT OUR <span class="violet">PORTFOLIO</span> TO SEE YOURSELF</p>
+            </div>
 
 
 
@@ -292,6 +305,20 @@
     paragraphs.forEach(paragraph => {
         observer.observe(paragraph);
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+  const word = document.querySelector(".clickable-word");
+  const imageContainer = document.getElementById("image-container");
+  const image = document.getElementById("image");
+
+  word.addEventListener("click", function() {
+    imageContainer.style.display = "block";
+  });
+
+  imageContainer.addEventListener("click", function() {
+    imageContainer.style.display = "none";
+  });
+});
 
     document.querySelector("#open-popup1").addEventListener("click", function () {
         document.querySelector(".popup").classList.add("active");

@@ -1,0 +1,30 @@
+<p>Click the word <span class="clickable-word">here</span> to open an image.</p>
+<div id="image-container" style="display: none;">
+  <img src="Frame 125.svg" alt="Image" id="image" />
+</div>
+
+<style>
+    .clickable-word {
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const word = document.querySelector(".clickable-word");
+  const imageContainer = document.getElementById("image-container");
+  const image = document.getElementById("image");
+
+  word.addEventListener("click", function() {
+    imageContainer.style.display = "block";
+  });
+
+  imageContainer.addEventListener("click", function() {
+    imageContainer.style.display = "none";
+  });
+});
+
+</script>
