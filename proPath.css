@@ -37,11 +37,8 @@ body{
   margin: 0; 
   background-image: url("background.png");
     color: white;
+    min-width: fit-content;
     
-}
-
-::-webkit-scrollbar {
-  right: 20px;
 }
 
 body:before{
@@ -246,7 +243,8 @@ h2{
 
 #mobiles{
   margin-top: 50px;
-  width: 1050px;
+  width:100%;
+  max-width: 1050px;
 }
 
 .flexbox-container{
@@ -437,19 +435,22 @@ h2{
 #circle1{
  position: absolute;
  top: 0;
- left: 220px;
+ left:2.5%;
+ width:100%
 }
 
 #circle2{
   position: absolute;
   top: 0;
-  left: 90px;
+  left: 1.5%;
+  width: 100%;
 }
 
 #circle3{
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 0%;
+  width: 100%;
 }
 
 .bgblack{
@@ -493,7 +494,7 @@ h2{
  left: 50%;
  transform: translate(-50%, -50%) scale(1.2);
  opacity: 0;
- background: gradient(to bottom right, #bdbaba, #5a5959);
+ background: linear-gradient(to bottom right, #bdbaba, #5a5959);
  border: 1px solid rgba(255, 255, 255, 0.15);
  width: 650px;
  padding: 20px 30px;
@@ -528,6 +529,8 @@ h2{
   display: flex;
   flex-direction: row;
   margin-left: 12%;
+  gap:25%;
+  flex-flow: wrap-reverse;
 }
 
 .child{
@@ -543,8 +546,7 @@ h2{
 
 .aniNgif{
   position: relative;
-  left: 20%;
-  top: 50px;
+  margin-top: 50px;
 }
 
 #animation{
@@ -821,6 +823,13 @@ h2{
 
        #bar{
         margin-top: 5%;
-        width: 1070px;
+        width:100%;
+        max-width: 1070px;
         height: 500px;
+       }
+
+       @media only screen and (max-width:1184px){
+        .initial{
+          line-height: 1em;
+        }
        }
