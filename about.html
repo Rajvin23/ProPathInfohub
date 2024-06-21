@@ -1,28 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Document</title>
+</head>
 <body>
-      
-    <div class="blackshade">
-        <div class="heading">
-            <div class="logoNname">
-            <img id="logo" src="logo.png">
-            <span class="propath">ProPath</span>
-            </div>    
-        
+    
+</body>
+</html>
+<body>      
+    <div class="heading">
+        <div class="logoNname">
+            <img id="logo" src="Group 34.svg">
+            <div>
+            <span class="clickable-word">services</span>
+            <div id="image-container" style="display: none;">
+                <img src="Frame 125.svg" alt="Image" id="image" />
+              </div>
+             </div>
+            <img src="Frame 45.svg" alt="">
+        </div>
+
         <div class="navigation">
-
-           <a class="anchor_tag" href="ProPath.html">Home</a>
-           <a class="anchor_tag" href="RDD.html">Services</a> 
-           <a class="anchor_tag" href="v.html">Work</a>
-           <a class="anchor_tag" href="about.html">About Us</a>
-            
-            </div>            
+            <a class="anchor_tag" href="#">Work</a>
+            <a class="anchor_tag" href="about.html">About Us</a>
+            <div class="hamburger">
+                <div class="ham"></div>
+                <div class="ham"></div>
+            </div>
         </div>
-        </div>
-
     </div>
     
-    <div class="companyNdesign"><p>ProPath infohub</p>
-        <img id="Ellipse" src="Ellipse 15.svg"> </div>
-
      <div class="lastpage">
     <div class="about"> 
         <p>About US</p>
@@ -38,10 +47,10 @@
 
     <div class="container">
         <div class="column">
-          <p>At ProPath InfoHub, we're passionate about what we do - delivering exceptional results for our clients through cutting-edge solutions. Our talented team, comprised of experts in software development, design, marketing, and more, brings a wealth of unique skills and perspectives to the table. We foster a collaborative environment where creativity thrives and complex challenges are tackled effectively.</p>
+          At ProPath InfoHub, we're passionate about what we do - delivering exceptional results for our clients through cutting-edge solutions. Our talented team, comprised of experts in software development, design, marketing, and more, brings a wealth of unique skills and perspectives to the table. We foster a collaborative environment where creativity thrives and complex challenges are tackled effectively.
         </div>
         <div class="column">
-          <p>Committed to staying ahead of the curve, we believe in continuous learning and development. Our team actively seeks out new opportunities to grow and improve, equipping themselves with the latest tools and knowledge to consistently exceed client expectations.</p>
+          Committed to staying ahead of the curve, we believe in continuous learning and development. Our team actively seeks out new opportunities to grow and improve, equipping themselves with the latest tools and knowledge to consistently exceed client expectations.
         </div>
       </div>
       
@@ -105,62 +114,47 @@
  }
 .propath{
   font-size: 1.2rem;
-  /* margin-top: 17px; */
   font-family: kronaOne;
 }
 
 .heading{
-    height:50px; 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2px;
-  line-height: 5px;
-  width: 60%;
-  margin:auto;
-  color: #fff;
-  padding:0px 5px;
-  margin:0 20%;
-  background-color: rgba(128, 128, 128, 0.35); 
-  border-radius: 1rem;
-    z-index: 10;
-    font-family: PoppinsMedium;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 90%;
+    padding:1% 5%;
+    font-family: PoppinsMedium; 
+    color: #fff;
 }
-
-
 
 .logoNname{
     display: flex;
     flex-direction: row;
     align-items: center;
     gap:10px;
-    font-family: PoppinsMedium;
+    font-family: "PoppinsMedium";
 }
 .navigation{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 10%;
     align-items: center;
+    justify-content: space-between;
     color: white;
-    width:60%;
-    /* margin-bottom: 10%; */
-    
+    width: 20%;
 }
 
-  .blackshade{
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 110px;
-    padding-top: 40px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0));;
-    z-index: 100;    
-  }
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 9%;
+}
 
-  nav a:hover{
-    font: bold;
-  }
+.ham{
+  border: 1px solid white;
+}
 
   .anchor_tag {
     text-decoration: none;
@@ -168,12 +162,9 @@
   }
 
 body{
-    background: linear-gradient(to bottom, rgb(3, 3, 53), rgb(45, 45, 194) 20%, rgb(2, 2, 58) 55%, rgb(2, 2, 58) 100%) ;;
+    
+  background-image: url("background.png");
     margin-bottom: 20%;
-}
-
-#ellipse{
-    margin-left: 65%;
 }
 
 @font-face {
@@ -186,24 +177,19 @@ body{
     src: url(/propath/fonts/Poppins/Poppins-Light.ttf);
 }
 
-.companyNdesign{
+#headingLogo{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: 50px;
-  font-family: Poppins;
-  font-size: 0.9rem;
-  color: rgb(211, 196, 196);
+  margin-top: 50px;
   
 }
 
-.lastPage{
-    margin-top: -100px;
-}
 
 .about{
     font-family: PoppinsMedium;
-    margin-top: 150px;
+    margin-top: 10%;
    text-align: center;
    font-size: 2.5rem;
    color: white;
@@ -231,22 +217,26 @@ body{
 }
 
 #people{
-    margin-left: 12%;
+    margin: 10% 10% 0;
     margin-top: 10px;
+    width: 80%;
 }
 
 .container {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
   color: white;
-  margin-left: 12%;
-  margin-right: 12%;
+  margin: 0 10%;
   font-family: PoppinsLight;
   font-size: 1.2rem;
 }
 
 .column {
-  flex: 1; /* Each column takes up equal width */
-  margin-right: 20px; /* Space between columns */
+  width: 46%;
+  min-width: 400px; 
+  margin: 10px 0; /* Space between columns */
 }
 
 .column:last-child {
@@ -385,7 +375,6 @@ body{
     
  }
 
-
 .contents{
      margin-left: 10px;
  }
@@ -458,4 +447,11 @@ body{
      color: black; /* Change the color of the icon on hover */
  }
 
+@media only screen and (max-device-width:500px) {
+    .column{
+        width: 80%;
+        
+    }
+    
+}
 </style>
