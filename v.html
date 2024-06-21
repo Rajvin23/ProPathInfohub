@@ -1,37 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Works</title>
+  <link rel="stylesheet" href="./stylesheet/footerElement.css">
+
+</head>
+
+
+
 <body>
 
-<div class="tabs-container">
-    <div class="tab">Tab 1</div>
-    <div class="tab">Tab 2</div>
-    <div class="tab">Tab 3</div>
-    <div class="tab">Tab 4</div>
-    <div class="tab">Tab 5</div>
-    <div class="tab">Tab 6</div>
-    <div class="tab">Tab 7</div>
-    <div class="highlighter"></div>
+  <div class="heading">
+    <div class="logoNname">
+        <img id="logo" src="Group 34.svg">
+        <div>
+        <span class="clickable-word">Services</span>
+        <div id="image-container" style="display: none;">
+            <img src="Frame 125.svg" alt="Image" id="image" />
+          </div>
+         </div>
+        <img src="Frame 45.svg" alt="">
+    </div>
+
+    <div class="navigation">
+        <a class="anchor_tag" href="#">Works</a>
+        <a class="anchor_tag" href="about.html">About Us</a>
+        <div class="hamburger">
+            <div class="ham"></div>
+            <div class="ham"></div>
+        </div>
+    </div>
+</div>
+
+<div class="content">
+  <div class="initial">
+    Discover our journey by exploring our impactful projects!
   </div>
+  <div class="tabt">
+    <!-- <button class="tablinks" (click)="function1()">Tab1</button>
+    <button class="tablinks" (click)="function2()">Tab2</button> -->
+    <button class="tablinks">See All</button>
+    <button class="dummy"></button>
+    <button class="tablinks">Platforms</button>
+    <button class="dummy"></button>
+    <button class="tablinks">Corporate Websites</button>
+    <button class="dummy"></button>
+    <button class="tablinks">Web Application</button>
+    <button class="dummy"></button>
+    <button class="tablinks">Mobile Applications</button>
+    <button class="dummy"></button>
+    <button class="tablinks">Landing Page</button>
+    <button class="dummy"></button>
+    <button class="tablinks">Branding</button>
+    <!-- <div class="highlighter"></div> -->
+    </div>
+<!-- <div class="tabs-container">
+    <div class="tab">See All</div>
+    <div class="tab">Platforms</div>
+    <div class="tab">Corporate Websites</div>
+    <div class="tab">Web Application</div>
+    <div class="tab">Mobile Applications</div>
+    <div class="tab">Landing Page</div>
+    <div class="tab">Branding</div>
+    <div class="highlighter"></div>
+  </div> -->
 
   <div class="scope">
     <div class="tabs">
-    <div class="mobile">Mobile App</div>    
+    <div class="mobile">Mobile App</div> 
+    <div class="tmdb">
+      TMBD
+   </div>
+     <span class="projectTitle">Shop Link</span>
+     <span class="aboutProject">A community-built global database for movies and TV shows</span>
+     <span class="projectScope">#back-end</span>
+     <span class="view">View Detail</span>   
     </div>
      <div class="tabs">
           
         <div class="platform">Platforms</div>
-        <div class="tmbd">
-           <p>TMBD</p>
+        <div class="tmdb">
+           TMBD
         </div>
+          <span class="projectTitle">The Movie DB</span>
+          <span class="aboutProject">A community-built global database for movies and TV shows</span>
+          <span class="projectScope">#back-end</span>
+          <span class="view">View Detail</span>
+        
     
     </div>
      <div class="tabs">
         <div class="website">Website</div>
     </div>
     </div>
+  </div>
+
+  <div class="flexbox-container">
+    <div class="flexbox item-1">
+        <img id="arrow" src="circle.svg">
+        <img id="arrowline" src="arrowline.svg">
+        <img id="circle" src="arrow.svg">
+
+        <div class="content-1">
+            <div class="words">
+                <div>Every</div>
+                <div>moment</div>
+                <div>matters</div>
+            </div>
+            <div class="rightsNname">
+                <div class="company"><img id="logo" src="logo.png">
+                    <span>ProPath</span>
+                </div>
+                <div class="rights"><span>@ 2024 All Rights Reserved, ProPath Infohub llp.</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexbox item-2">
+        <div class="contents">
+            <div class="support">
+                <p>Support</p>
+            </div>
+            <div class="content-2">
+                <div>Have Question?</div>
+                <div>check out our Help Center</div>
+                <div class="link1">
+                    <p>You can also text our support team - Email us at <a
+                            href="#">support@propathinfohub.com</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexbox item-3">
+        <div class="link2">Get in touch - <span>hello@propathinfohub.com</span></div>
+    </div>
+
+    <div class="flexbox item-4"><span class="social">Social</span>
+        <div class="app1"><a href="#"><img id="app" src="X.svg"></a></div>
+        <div class="app2"><a href="#"></a><img id="app" src="linkedin.svg"></a></div>
+        <div class="app3"><a href="#"></a><img id="app" src="insta.svg"></a></div>
+        <div class="app4"><a href="#"></a><img id="app" src="website.svg"></a></div>
+    </div>
+</div>
+</div>
+
 </body>
+</html>
+
 <style>
+@font-face {
+    font-family: PoppinsMedium;
+    src: url(/propath/fonts/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: Poppins-semibold;
+    src: url(/propath/fonts/Poppins/Poppins-semibold.ttf);
+}
+
+@font-face {
+    font-family: kronaOne;
+    src: url(/proPath/fonts/KronaOne-Regular.ttf);
+ }
+
+ .tabt {
+  overflow: hidden;
+  display: flex;
+  /* justify-content: space-between; */
+  
+  color:white;
+  /* background-color: white; */
+}
+.dummy{
+  width: 5%;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.24);
+}
+.tabt button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 14px;
+  transition: 0.3s;
+  font-size: 17px;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.24);
+  /* background-color: #ccc; */
+  color:white
+}
+
+/* .tabt button:hover {
+  background-color: #ddd;
+} */
+
+.tabt button.active {
+  background-color: blue;
+}
+
+.tabcontent {
+  display: block;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.tablinks:focus {border-bottom:3px solid #ffffff;}
+
+.propath{
+  font-size: 1.2rem;
+  font-family: kronaOne;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    width: 90%;
+    padding:1% 5%;
+    font-family: PoppinsMedium; 
+    color: #fff;
+}
+
+.logoNname{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    font-family: "PoppinsMedium";
+}
+.navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 20%;
+}
+
+.hamburger{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  width: 9%;
+}
+
+.ham{
+  border: 1px solid white;
+}
+
+  .anchor_tag {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  .content{
+    justify-content: center;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  }
+
+  .initial{
+    font-family: Poppins-semibold;
+    font-size: 3.2rem;
+  }
+
 body{
-   background: linear-gradient(to bottom, rgb(3, 3, 53), rgb(45, 45, 194) 20%, rgb(2, 2, 58) 33%, rgb(2, 2, 58) 100%) ;
-   color: white
+  background-image: url("background.png");
+  color: white
 }
 
 .tabs {
@@ -42,7 +281,7 @@ body{
     height: 260px;
     border-radius: 25px;
     margin: 15px;
-    padding: 10px;
+    padding: 20px;
     transition: 0.5s;
     position: relative;
     overflow: hidden; 
@@ -50,11 +289,12 @@ body{
     text-align: left;
     background-color: rgb(245, 245, 248);
     font-family: Poppins;
+    color: black;
 }
+
 
 .mobile{
     background-color: rgb(225, 225, 43);
-    margin-bottom: 80%;
     font-size: 0.8rem;
     padding-right: 10px;
     padding-left: 10px;
@@ -82,7 +322,7 @@ body{
     display: flex;
     flex-direction: column;
     background-color: rgb(72, 237, 81);
-    margin-bottom: 80%;
+    /* margin-bottom: 80%; */
     font-size: 0.8rem;
     padding-right: 10px;
     padding-left: 10px;
@@ -93,7 +333,24 @@ body{
     width: 21%;
 }
 
+.projectTitle{
+  margin-top: 4%;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  font-family: "PoppinsMedium";
+}
 
+.aboutProject{
+  margin-top: 2%;
+}
+
+.projectScope{
+  margin-top: 4%;
+}
+
+.view{
+  margin-top: 4%;
+}
 
 .tab_contents{
    font-family: Poppins;
@@ -103,6 +360,7 @@ body{
 .scope{
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .tabs-container {
@@ -114,6 +372,7 @@ body{
 .tab {
   padding: 10px 20px;
   cursor: pointer;
+  font-family: PoppinsMedium;
 }
 
 .highlighter {
@@ -136,6 +395,18 @@ body{
   left: calc(14.2857% * var(--active-tab-index)); /* Position the highlighter based on the active tab */
 }
 
+.tmdb{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right, #8CCBA0 0%, #10B5DD 100%);
+  border-radius: 13px;
+  height: 88px;
+  margin-top: 5%;
+  color: white;
+}
+
 
 </style>
 
@@ -146,6 +417,7 @@ tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {
         tabs.forEach((t) => t.classList.remove('active'));
         tab.classList.add('active');
+        console.log("idx",index*14.2857)
         document.documentElement.style.setProperty('--active-tab-index', index);
     });
 });
