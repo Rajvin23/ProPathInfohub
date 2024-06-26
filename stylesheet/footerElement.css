@@ -1,3 +1,21 @@
+
+
+
+@font-face {
+  font-family: "kronaOne";
+  src: url(https://rajvin23.github.io/ProPathInfohub/fonts/KronaOne-Regular.ttf);
+}
+
+  @font-face{
+  font-family: "Poppins";
+  src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face{
+  font-family: "Poppins-Thin";
+  src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Light.ttf);
+} 
+
 .flexbox-container{
     margin-top: 15%;
     margin-left: 15%;
@@ -190,3 +208,4 @@
     left: 0%;
     width: 100%;
   }
+
