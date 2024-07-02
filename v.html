@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Works</title>
   <link rel="stylesheet" href="./stylesheet/footerElement.css">
+  <link rel="icon" type="image/x-icon" href="logo.png">
 
 </head>
 
@@ -15,15 +16,15 @@
     <div class="logoNname">
       <a href="ProPath.html"><img id="logo" src="Group 34.svg"></a>        
       <div>
-        <span class="clickable-word">Services</span>
         <div id="image-container" style="display: none;">
             <img src="Frame 125.svg" alt="Image" id="image" />
           </div>
          </div>
-        <img src="Frame 45.svg" alt="">
+        <!-- <img src="Frame 45.svg" alt=""> -->
     </div>
 
     <div class="navigation">
+      <span class="clickable-word">Services</span>
         <a class="anchor_tag" href="#">Works</a>
         <a class="anchor_tag" href="about.html">About Us</a>
         <div class="hamburger">
@@ -168,13 +169,13 @@
  .tabt {
   overflow: hidden;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: center;
   
   color:white;
   /* background-color: white; */
 }
 .dummy{
-  width: 5%;
+  /* width: 5%; */
   border-bottom: 3px solid rgba(255, 255, 255, 0.24);
 }
 .tabt button {
@@ -237,7 +238,7 @@
     align-items: center;
     justify-content: space-between;
     color: white;
-    width: 20%;
+    width: 30%;
 }
 
 .hamburger{
@@ -265,7 +266,11 @@
 
   .initial{
     font-family: Poppins-semibold;
-    font-size: 3.2rem;
+    font-size: 3rem;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  margin-left: 10%;
+  margin-right: 10%;
   }
 
 body{
@@ -277,8 +282,8 @@ body{
     
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: 260px;
+    width: 276px;
+    height: 339px;
     border-radius: 25px;
     margin: 15px;
     padding: 20px;
@@ -302,7 +307,7 @@ body{
     padding-bottom: 2px;
     border-radius: 10px;
     color: white;
-    width: 21%;
+    width: max-content;
 }
 
 .website{
@@ -315,7 +320,7 @@ body{
     padding-bottom: 2px;
     border-radius: 10px;
     color: white;
-    width: 21%;
+    width: max-content;
 }
 
 .platform{
@@ -330,7 +335,7 @@ body{
     padding-bottom: 2px;
     border-radius: 10px;
     color: white;
-    width: 21%;
+    width: max-content;
 }
 
 .projectTitle{
@@ -360,7 +365,9 @@ body{
 .scope{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap:20px;
+    padding-top: 5%;
 }
 
 .tabs-container {
@@ -403,6 +410,7 @@ body{
   background: linear-gradient(to right, #8CCBA0 0%, #10B5DD 100%);
   border-radius: 13px;
   height: 88px;
+  padding:20px 0px;
   margin-top: 5%;
   color: white;
 }

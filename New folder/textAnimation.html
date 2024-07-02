@@ -1,3 +1,9 @@
+<p>Click on this <span class="clickable-word">word</span> to open the image.</p>
+
+    <div id="overlay" class="overlay">
+        <img id="overlayImage" src="website.svg" alt="Overlay Image">
+    </div>
+
 <div class="flexbox-container">
   <div class="flexbox item-1"> 
      <img id="arrow" src="circle.svg">
@@ -56,6 +62,34 @@
     font-family: Poppins-bold;
     src: url(/proPath/fonts/Poppins/Poppins-Medium.ttf);
  }
+
+
+
+.clickable-word {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensures the overlay is on top of other elements */
+}
+
+.overlay img {
+    max-width: 90%;
+    max-height: 90%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
 
 .flexbox-container{
     margin-top: 10%;
@@ -226,3 +260,18 @@
  }
 
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+    const clickableWord = document.querySelector('.clickable-word');
+    const overlay = document.getElementById('overlay');
+
+    clickableWord.addEventListener('click', () => {
+        overlay.style.display = 'flex'; // Show the overlay and image
+    });
+
+    overlay.addEventListener('click', () => {
+        overlay.style.display = 'none'; // Hide the overlay and image when clicked
+    });
+});
+</script>
