@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propath Infohub</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="proPath.css">
+    <script src="https://kit.fontawesome.com/bb37257d3a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <script>
+        document.onmousemove=e=>{
+            console.log("executed")
+            let dot=document.createElement("span");
+            dot.innerHTML=`<i class="fa-solid fa-star"></i>`
+            dot.className="dot";
+            dot.style.left=`${e.clientX}px`;
+            dot.style.top=`${e.clientY}px`;
+            document.body.appendChild(dot);
+            setTimeout(()=>document.body.removeChild(dot),500)
+        }
+    </script>
+    <div class="mainContent">
+        <div class="firstLast first-content">
+            <div>
+                <div class="logoNname">
+                    <img id="logo" src="Group 34.svg">
+                </div>
+                <div class="apology">
+                    <p>Apologies for the inconvenience...</p>
+                </div>
+            </div>
+            <div class="logoNRights">
+                <div class="flex-clmn social">
+                    <img class="icons" src="insta.svg" />
+                    <img class="icons" src="linkedin.svg" />
+                    <img class="icons" src="X.svg" />
+                    <img class="icons" src="website.svg" />
+                </div>
+                <div>
+                    <p class="rights">@ 2024 All Rights Reserved, ProPath Infohub llp.</p>
+                </div>
+            </div>
+        </div>
+        <div class="middleContent">
+            <div class="comingSoon">
+                <img class="cookingGif" src="image_processor.gif" alt="">
+            </div>
+            <div class="evolve">
+                <p class="evolving">We are evolving to a new website</p>
+            </div>
+
+            <div class="textBox">
+                <input type="email" placeholder="Kindly enter your email address" class="email-input" required>
+                <button class="notify-button">Notify Me</button>
+            </div>
+            <div class="evolve">
+                <p>Get notified when we are done cooking</p>
+            </div>
+        </div>
+        
+        <div class="firstLast cooking">
+            <a href="ProPath.html">Cooking Process</a>
+        </div>
+        <div class="logoNRightsxs">
+            <div class="flex-row socialxs">
+                <img src="insta.svg" />
+                <img src="linkedin.svg" />
+                <img src="X.svg" />
+                <img src="website.svg" />
+            </div>
+            <div>
+                <p class="rights">@ 2024 All Rights Reserved, ProPath Infohub llp.</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+
+
+<style>
+    @font-face {
+    font-family: Poppins;
+    src: url(/propath/fonts/Poppins/Poppins-Regular.ttf);
+}
+    html{
+        height: 100%;
+    }
+    body {
+        background: black;
+        font-family: Poppins;
+        height: 100%;
+    }
+    .dot{
+        /* display: block; */
+        z-index: 2;
+        position: absolute;
+        width:5px;
+        height: 5px;
+        animation-name: fall;
+        animation-duration: 1.5s;
+        /* background: #007bff; */
+        /* color:#ffffff; */
+    }
+    
+    .icons{
+        color: white;
+        background: black;
+    }
+    /* .icons:hover{
+        color: green;
+        background: green;
+    } */
+    .logoNname {
+        display: flex;
+        margin-top: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        justify-content: space-between;
+    }
+
+    .evolve {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+
+    }
+    .evolving{
+        font-weight: 600;
+        padding-bottom: 50px;
+    }
+
+    a {
+        color: white;
+    }
+
+    .comingSoon {
+        display: flex;
+        justify-content: center;
+    }
+
+    .apology {
+        color: white;
+        margin-left: 5%;
+    }
+
+    .textBox {
+        display: flex;
+        align-items: center;
+        border: 1px solid;
+        border-radius: 4px;
+        overflow: hidden;
+        /* margin-left: 35%;
+        margin-right: 35%; */
+    }
+
+    .mainContent {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 2% 20px 2% 2%;
+        /* height: 100vh; */
+        height: 100%;
+        flex-wrap: wrap;
+    }
+
+    .email-input {
+        border: none;
+        padding: 10px;
+        flex: 1;
+        outline: none;
+        font-size: 16px;
+        background-color: rgba(238, 238, 246, 0.2);
+        color: white;
+    }
+
+    .notify-button {
+        border: none;
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    .notify-button:hover {
+        background-color: #0056b3;
+    }
+
+    .flex-row {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .flex-clmn{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social {
+        gap: 35px;
+        width: 30px;
+        height: 300px
+    }
+
+    .socialxs{
+        justify-content: center;
+        gap: 20px;
+        width:100%;
+    }
+
+    .rights {
+        color: white
+    }
+
+    .firstLast {
+        width: 25%;
+        height: 100%;
+
+    }
+    .cookingGif{
+        max-width: 600px;
+        max-height: 450px;
+        object-fit: cover;
+    }
+    .cooking {
+        text-align: right;
+    }
+    .logoNRights{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .logoNRightsxs{
+        display: none;
+    }
+    .first-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .middleContent{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    @keyframes fall{
+        0%{
+            transform: translate(0px, 0px);
+            opacity: 1;
+        }
+        100%{
+            transform: translate(0px, 200px);
+            opacity: 0;
+        }
+    }
+   
+    @media only screen and (max-width: 900px) {
+        .logoNRights{
+            display: none;
+        }
+        .firstLast{
+            width: 100%;
+            height:25%;
+        }
+        .cooking{
+            display: none;
+        }
+        .logoNRightsxs{
+            margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .middleContent{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+    }
+</style>
