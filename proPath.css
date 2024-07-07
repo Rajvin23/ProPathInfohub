@@ -71,7 +71,7 @@ body:before{
 }
 
 .initial{
-  font-size: 3.2rem;
+  font-size: 3.4rem;
   font-family: "Poppins-SemiBold";
   line-height: 10px;
   transition: none;
@@ -157,7 +157,7 @@ body:before{
   }
 
   .next{
-   margin-top: 5%;
+   margin-top: 15%;
    text-align: left;
    margin-left: 11%;
    margin-right: 11%;
@@ -244,7 +244,7 @@ h2{
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: -15%;
+  margin-top: -10%;
   
 }
 
