@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="heading">
-        <div class="logoNname">
+    <div class="heading" id="headingDiv">
+        <div class="logoNname" >
             <a href=""><img id="logo" src="Group 34.svg"></a>
             <div>
             <div id="image-container" style="display: none;">
@@ -27,9 +27,7 @@
         <div class="navigation">
             
             <span class="clickable-word">Services</span>
-            <div id="overlay" class="overlay">
-                <img id="overlayImage" src="Frame 137.svg" alt="Overlay Image">
-            </div> 
+            
 
             <a class="anchor_tag" href="./works/">Works</a>
             <a class="anchor_tag" href="./aboutus/">About Us</a>
@@ -39,7 +37,31 @@
             </div> -->
         </div>
     </div>
-
+    <div id="overlay" class="overlay">
+        <div class="heading">
+            <div class="logoNname">
+                <a href=""><img id="logo" src="Group 34.svg"></a>
+                <div>
+                <div id="image-container" style="display: none;">
+                    <img src="Frame 125.svg" alt="Image" id="image" />
+                  </div>
+                 </div>
+                <!-- <img src="Frame 45.svg" alt=""> -->
+            </div>
+    
+            <div class="navigation">
+                
+                <span class="clickable-word">Services</span>    
+                <a class="anchor_tag" href="./works/">Works</a>
+                <a class="anchor_tag" href="./aboutus/">About Us</a>
+                <!-- <div class="hamburger">
+                    <div class="ham"></div>
+                    <div class="ham"></div>
+                </div> -->
+            </div>
+        </div>
+        <img id="overlayImage" src="Frame 137.svg" alt="Overlay Image">
+    </div> 
     <div class="reveal">
         <div><img src="Ellipse 26.svg" id="circle1"></div>
         <div><img src="Ellipse 27.svg" id="circle2"></div>
@@ -103,10 +125,10 @@
                 <p class="large">Achieve exceptional results with our services</p>
                 <p class="small">So much good stuff, this will be that last time you search for a design & photography solution!</p>
             </div>
-         <div class="aniNgif"> 
+         <!-- <div class="aniNgif"> 
             <img src="giffycanvas 2.mp4" id="gif">
-            <!-- <img src="Animation - 1712740459019.gif" alt="" id="animation"> -->
-        </div>  
+             <img src="Animation - 1712740459019.gif" alt="" id="animation">
+        </div>   -->
     </div>
 
             <img src="image 48.svg" alt="" id="bar">
@@ -131,8 +153,12 @@
                         solutions, we bridge the digital gap for businesses of all sizes. No matter what your business
                         needs, we've got the expertise to make it happen!</p>
                 </div>
-
-                <img id="mobiles" src="mobiles.svg">
+                <video id="mobiles" controls>
+                    <source src="promo.mp4" type="video/mp4">
+                    <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  Your browser does not support the video tag.
+                  </video>
+                <!-- <img id="mobiles" src="mobiles.svg"> -->
             </div>
         </div>
 
@@ -419,13 +445,17 @@
     document.addEventListener('DOMContentLoaded', () => {
     const clickableWord = document.querySelector('.clickable-word');
     const overlay = document.getElementById('overlay');
-
+    const heading= document.getElementById("headingDiv");
     clickableWord.addEventListener('click', () => {
+        heading.classList.add('hide');
         overlay.style.display = 'flex'; // Show the overlay and image
+        console.log("print1")
+        
     });
-
     overlay.addEventListener('click', () => {
         overlay.style.display = 'none'; // Hide the overlay and image when clicked
+        console.log("print2")
+        heading.classList.remove('hide');
     });
 });
 

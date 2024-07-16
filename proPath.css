@@ -1,386 +1,407 @@
  @font-face {
-    font-family: "kronaOne";
-    src: url(https://rajvin23.github.io/ProPathInfohub/fonts/KronaOne-Regular.ttf);
-}
+   font-family: "kronaOne";
+   src: url(https://rajvin23.github.io/ProPathInfohub/fonts/KronaOne-Regular.ttf);
+ }
 
-    @font-face{
-    font-family: "Poppins";
-    src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Regular.ttf);
-}
- 
-@font-face{
-    font-family: "Poppins-SemiBold";
-    src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-SemiBold.ttf);
-}
+ @font-face {
+   font-family: "Poppins";
+   src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Regular.ttf);
+ }
 
-@font-face{
-    font-family: "Poppins-Thin";
-    src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Light.ttf);
-} 
+ @font-face {
+   font-family: "Poppins-SemiBold";
+   src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-SemiBold.ttf);
+ }
 
-@font-face{
-  font-family: "Poppins-bold";
-  src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Medium.ttf);
-}
+ @font-face {
+   font-family: "Poppins-Thin";
+   src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Light.ttf);
+ }
 
-@font-face {
-  font-family: "PoppinsMedium";
-  src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Medium.ttf);
-}
+ @font-face {
+   font-family: "Poppins-bold";
+   src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Medium.ttf);
+ }
 
-
-body{
-  overflow-x: hidden;
-  margin: 0; 
-  background-image: url("background.png");
-    color: white;
-    min-width: fit-content;
-    }
-
-    .overlay {
-      display: none; /* Hidden by default */
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
-      justify-content: center;
-      align-items: center;
-      z-index: 100; /* Ensures the overlay is on top of other elements */
-  }
-  
-  .overlay img {
-      max-width: 90%;
-      max-height: 90%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  }
-
-body:before{
-  position:absolute;
-  top : 0;
-  left: 0;
-  width: 100%;
-  /* height: 100%; */
-  background-color: black;
-  content:"";
-  pointer-events: none;
-  z-index:100;
-  opacity: .5
-
-}
-
-.initial{
-  font-size: 3.4rem;
-  font-family: "Poppins-SemiBold";
-  line-height: 10px;
-  transition: none;
-  }
-
-.propath{
-  font-size: 1.2rem;
-  font-family: "kronaOne";
-}
-
-.heading{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 50px;
-  width: 90%;
-  padding:1% 5%;
-  font-family: PoppinsMedium; 
-  color: #fff;
-  z-index: 1000;
-}
-
-.logoNname{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap:10px;
-    font-family: "PoppinsMedium";
-}
-.navigation{
-  display: flex;
-  flex-direction: row;
-  gap: 10%;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  width: 30%;
-}
-
-.hamburger{
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  width: 9%;
-}
-
-.ham{
-  border: 1px solid white;
-}
-
-  .companyNdesign{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 50px;
-    font-family: "Poppins";
-    font-size: 0.9rem;
-    color: rgb(211, 196, 196);
-    
-  }
-
-  #Ellipse{
-    margin-left: 65%;
-}
-
-  nav a:hover{
-    font: bold;
-  }
-
-  .anchor_tag {
-    padding-top: 2px;
-    text-decoration: none;
-    color: #fff;
-  }
+ @font-face {
+   font-family: "PoppinsMedium";
+   src: url(https://rajvin23.github.io/ProPathInfohub/fonts/Poppins/Poppins-Medium.ttf);
+ }
 
 
-  .large{
-    
-    line-height: 1.5;
-    font-family: "Poppins-SemiBold";
-    font-weight: 70;
-    font-size: 2rem;
-  }
+ body {
+   overflow-x: hidden;
+   margin: 0;
+   background-image: url("background.png");
+   color: white;
+   /* min-width: fit-content; */
+ }
 
-  .next{
+ .overlay {
+   display: none;
+   /* Hidden by default */
+   flex-direction: column;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.8);
+   /* Transparent black */
+   /* justify-content: center; */
+   align-items: center;
+   z-index: 100;
+   /* Ensures the overlay is on top of other elements */
+ }
+
+ .overlay img {
+   max-width: 90%;
+   max-height: 90%;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ }
+
+ body:before {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   /* height: 100%; */
+   background-color: black;
+   content: "";
+   pointer-events: none;
+   z-index: 100;
+   opacity: .5
+ }
+
+ .initial {
+   font-size: 3.4rem;
+   font-family: "Poppins-SemiBold";
+   line-height: 10px;
+   transition: none;
+ }
+
+ .propath {
+   font-size: 1.2rem;
+   font-family: "kronaOne";
+ }
+
+ .hide {
+   display: none !important;
+ }
+
+ .heading {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   height: 50px;
+   width: 90%;
+   padding: 1% 5%;
+   font-family: PoppinsMedium;
+   color: #fff;
+   z-index: 999;
+   position: relative;
+ }
+
+ .logoNname {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 10px;
+   font-family: "PoppinsMedium";
+ }
+
+ .navigation {
+   display: flex;
+   flex-direction: row;
+   gap: 10%;
+   align-items: center;
+   justify-content: space-between;
+   color: white;
+   width: 30%;
+ }
+
+ .hamburger {
+   display: flex;
+   flex-direction: column;
+   gap: 3px;
+   width: 9%;
+ }
+
+ .ham {
+   border: 1px solid white;
+ }
+
+ .companyNdesign {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   margin-left: 50px;
+   font-family: "Poppins";
+   font-size: 0.9rem;
+   color: rgb(211, 196, 196);
+
+ }
+
+ #Ellipse {
+   margin-left: 65%;
+ }
+
+ nav a:hover {
+   font: bold;
+ }
+
+ .anchor_tag {
+   padding-top: 2px;
+   text-decoration: none;
+   color: #fff;
+ }
+
+
+ .large {
+
+   line-height: 1.5;
+   font-family: "Poppins-SemiBold";
+   font-weight: 70;
+   font-size: 2rem;
+ }
+
+ .next {
    margin-top: 15%;
    text-align: left;
    margin-left: 11%;
    margin-right: 11%;
 
-  }
+ }
 
-  .next2{
-    margin-top: 5%;
-    text-align: left;
-    margin-left: 11%;
-    margin-right: 11%;
-   }
+ .next2 {
+   margin-top: 5%;
+   text-align: left;
+   margin-left: 11%;
+   margin-right: 11%;
+ }
 
-  .tabs {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    width: 310px;
-    height: 260px;
-    border-radius: 25px;
-    margin: 15px;
-    padding: 10px;
-    transition: 0.5s;
-    position: relative;
-    overflow: hidden; 
-    cursor: pointer;
-    text-align: left;
-    background-color: rgba(238, 238, 246, 0.2);
-    font-family: "Poppins";
-    
-}
+ .tabs {
+   align-items: center;
+   display: flex;
+   flex-direction: row;
+   width: 310px;
+   height: 260px;
+   border-radius: 25px;
+   margin: 15px;
+   padding: 10px;
+   transition: 0.5s;
+   position: relative;
+   overflow: hidden;
+   cursor: pointer;
+   text-align: left;
+   background-color: rgba(238, 238, 246, 0.2);
+   font-family: "Poppins";
 
-.tab{
-  display: flex;
-  flex-direction: row;
-  color: white;
-  justify-content: space-evenly;
-  width: 90%;
-}
+ }
 
-h2{
-  font-family: "Poppins-Thin";
-  font-size: 1.5rem;
-}
+ .tab {
+   display: flex;
+   flex-direction: row;
+   color: white;
+   justify-content: space-evenly;
+   width: 90%;
+ }
 
-.tab_contents{
+ h2 {
+   font-family: "Poppins-Thin";
+   font-size: 1.5rem;
+ }
+
+ .tab_contents {
    font-family: "Poppins";
    margin-bottom: 10%;
-}
+ }
 
-.yellowLine h2::before {
-  content: '';
-  border-left: 3px solid rgb(203, 209, 14); /* Adjust the width and color as needed */
-  height: 100%; /* Adjust the height of the line */
-  margin-right: 10px; /* Adjust the distance between the line and the text */
-}
+ .yellowLine h2::before {
+   content: '';
+   border-left: 3px solid rgb(203, 209, 14);
+   /* Adjust the width and color as needed */
+   height: 100%;
+   /* Adjust the height of the line */
+   margin-right: 10px;
+   /* Adjust the distance between the line and the text */
+ }
 
-.greenLine h2::before {
-  content: '';
-  border-left: 3px solid rgb(61, 226, 83); /* Adjust the width and color as needed */
-  height: 100%; /* Adjust the height of the line */
-  margin-right: 10px; /* Adjust the distance between the line and the text */
-}
+ .greenLine h2::before {
+   content: '';
+   border-left: 3px solid rgb(61, 226, 83);
+   /* Adjust the width and color as needed */
+   height: 100%;
+   /* Adjust the height of the line */
+   margin-right: 10px;
+   /* Adjust the distance between the line and the text */
+ }
 
-.blueLine h2::before {
-  content: '';
-  border-left: 3px solid rgb(69, 99, 210); /* Adjust the width and color as needed */
-  height: 100%; /* Adjust the height of the line */
-  margin-right: 10px; /* Adjust the distance between the line and the text */
-}
+ .blueLine h2::before {
+   content: '';
+   border-left: 3px solid rgb(69, 99, 210);
+   /* Adjust the width and color as needed */
+   height: 100%;
+   /* Adjust the height of the line */
+   margin-right: 10px;
+   /* Adjust the distance between the line and the text */
+ }
 
-.scope{
-    display: flex;
-    flex-direction: row;
-    margin-left: 10%;
-}
+ .scope {
+   display: flex;
+   flex-direction: row;
+   margin-left: 10%;
+ }
 
 
 
  .content {
-  position: relative; /* Ensure content respects the container's position */
-  z-index: 10; /* Ensure content is above the images */
-  justify-content: center;
-  text-align: center;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-top: -10%;
-  
-}
+   position: relative;
+   /* Ensure content respects the container's position */
+   z-index: 10;
+   /* Ensure content is above the images */
+   justify-content: center;
+   text-align: center;
+   margin-left: 5%;
+   margin-right: 5%;
+   margin-top: -10%;
 
-#mobiles{
-  margin-top: 50px;
-  width:100%;
-  max-width: 1050px;
-}
+ }
 
-.flexbox-container{
-  margin-top: 15%;
-  margin-left: 15%;
-  margin-bottom: 10%;
-  width: 69%;
-  display: grid;
-  grid-template: repeat(3, 100px) / repeat(3, 100px);
-  grid-template-columns: 1fr 1fr 0.5fr;
-  font-size: large;
-  gap: 20px;
-  border-radius: 2em;
- }    
+ #mobiles {
+   margin-top: 50px;
+   width: 100%;
+   max-width: 1050px;
+   border-radius: 10px;
+ }
 
-.flexbox{
-  border-radius: 1.5em;
-  color: white;
-  background-color: rgba(238, 238, 246, 0.5);
-  z-index: 10;
-}
+ .flexbox-container {
+   margin-top: 15%;
+   margin-left: 15%;
+   margin-bottom: 10%;
+   width: 69%;
+   display: grid;
+   grid-template: repeat(3, 100px) / repeat(3, 100px);
+   grid-template-columns: 1fr 1fr 0.5fr;
+   font-size: large;
+   gap: 20px;
+   border-radius: 2em;
+ }
 
-.item-1{
-  display: flex;
-  flex-direction: column;
-  font-family: "kronaOne";
-  position: relative;
-  grid-row-start: 1;
-  grid-row-end: 4;
-  }
+ .flexbox {
+   border-radius: 1.5em;
+   color: white;
+   background-color: rgba(238, 238, 246, 0.5);
+   z-index: 10;
+ }
 
-.words{
-  display: flex;
-  flex-direction: column;
-  margin-top: -60px;
-  font-size: 1.5rem;
-  }
+ .item-1 {
+   display: flex;
+   flex-direction: column;
+   font-family: "kronaOne";
+   position: relative;
+   grid-row-start: 1;
+   grid-row-end: 4;
+ }
 
-.rights{
-  margin-bottom: 50px;
-  font-size: 0.6em;
-  font-family: "Poppins";
-}    
+ .words {
+   display: flex;
+   flex-direction: column;
+   margin-top: -60px;
+   font-size: 1.5rem;
+ }
 
-.content-1{
-  margin-top: 200px;
-  padding-left: 30px;
-}
+ .rights {
+   margin-bottom: 50px;
+   font-size: 0.6em;
+   font-family: "Poppins";
+ }
 
-.content-1 .small{
-  font-family: "Poppins-Thin";
-}
+ .content-1 {
+   margin-top: 200px;
+   padding-left: 30px;
+ }
 
-.company{
-  font-family: "kronaOne";
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-size: 1rem;
-  margin-top: 30px;
-}
+ .content-1 .small {
+   font-family: "Poppins-Thin";
+ }
 
-#logo{
-  max-height: 3em;
-}
-   
-#circle{
-  top: 0px;
-  position: absolute;
-}
+ .company {
+   font-family: "kronaOne";
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 1rem;
+   margin-top: 30px;
+ }
 
-#arrow{
-  top: 59px;
-  left: 165px;
-  position: absolute;
-}
+ #logo {
+   max-height: 3em;
+ }
 
-#arrowline{
-  top: 50px;
-  position: absolute;
-}
+ #circle {
+   top: 0px;
+   position: absolute;
+ }
 
-.support{
-  font-family: "kronaOne";
-  padding-left: 10px;
-}
+ #arrow {
+   top: 59px;
+   left: 165px;
+   position: absolute;
+ }
 
-.rightsNname{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+ #arrowline {
+   top: 50px;
+   position: absolute;
+ }
 
-.item-2{
-  justify-content: space-between;
-  grid-row-start: 1;
-  grid-row-end: 3;
-  
-}
+ .support {
+   font-family: "kronaOne";
+   padding-left: 10px;
+ }
 
-.contents{
+ .rightsNname {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+ }
+
+ .item-2 {
+   justify-content: space-between;
+   grid-row-start: 1;
+   grid-row-end: 3;
+
+ }
+
+ .contents {
    margin-left: 10px;
-}
+ }
 
-.content-2{
+ .content-2 {
    display: flex;
    flex-direction: column;
    margin-left: 10px;
    font-family: "Poppins";
    font-size: 0.8rem;
-}
+ }
 
-.link1{
+ .link1 {
    margin-top: 30px;
-}
+ }
 
-.item-3{
+ .item-3 {
    display: flex;
    font-size: 0.8em;
    justify-content: center;
    align-items: center;
-}
+ }
 
-.link2{
-   
-   font-family: "Poppins"; 
-}  
+ .link2 {
 
-.item-4{
+   font-family: "Poppins";
+ }
+
+ .item-4 {
    font-family: "kronaOne";
    display: flex;
    flex-direction: column;
@@ -389,456 +410,468 @@ h2{
    justify-content: space-between;
    align-items: center;
    gap: 1px;
-}
+ }
 
-#app{
+ #app {
    width: 30px;
    height: 30px;
-   font-size: 24px; /* Set the size of the icon */
-   color: white; /* Set the initial color of the icon */
+   font-size: 24px;
+   /* Set the size of the icon */
+   color: white;
+   /* Set the initial color of the icon */
    transition: color 0.3s;
-   
-}
 
-.social{
-  padding-top: 15px;
-}
+ }
 
-.app1{
+ .social {
+   padding-top: 15px;
+ }
+
+ .app1 {
    margin-top: 15px;
-  }
+ }
 
-.app2{
+ .app2 {
    margin-bottom: 10px;
-}
+ }
 
-.app3{
+ .app3 {
    margin-bottom: 10px;
-}
+ }
 
-.app4{
+ .app4 {
    margin-bottom: 60px;
-}
+ }
 
-#app:hover {
+ #app:hover {
    color: black;
-}
-
-.reveal {
-  opacity: 0;
-  transform: translateY(-500px);
-  transition: opacity 0.8s, transform 0.8s;
-  position: relative;
-  padding-top: 20%;
-  padding-bottom: 20%;
-   
-}
-
-.reveal.revealed {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-#circle1{
- position: absolute;
- top: 0;
- left:2.5%;
- width:100%
-}
-
-#circle2{
-  position: absolute;
-  top: 0;
-  left: 1.5%;
-  width: 100%;
-}
-
-#circle3{
-  position: absolute;
-  top: 0;
-  left: 0%;
-  width: 100%;
-}
-
-.bgblack{
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: #131111;
-  opacity: 0;
-  transition: all 0.5 linear;
-  display: none;
-  z-index: 100;
-}
-.bgblack.visible {
-  opacity: 0.5;
-  display: block;
-}
-
-.service{
-  position: fixed;
-  
-}
-
-.clickable-word {
-  color: white;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-#image-container{
- position: fixed;
- margin-top: 1%;
- z-index: 10;
- left: 4%;
-}
-
-.popup{
- position: fixed;
- top: 50%;
- left: 50%;
- transform: translate(-50%, -50%) scale(1.2);
- opacity: 0;
- background: linear-gradient(to bottom right, #bdbaba, #5a5959);
- border: 1px solid rgba(255, 255, 255, 0.15);
- width: 650px;
- padding: 20px 30px;
- border-radius: 10px;
- z-index: 0;
- transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out 0ms, transform 300ms ease-in-out 0ms;
-}      
-
-.popup.active{
- transform: translate(-50%, -50%) scale(1);
- opacity: 1;
- transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out 0ms, transform 300ms ease-in-out 0ms;
- z-index: 1000;
-}
-
-.popup .close-btn{
- position: absolute;
- top: 10px;
- right: 10px;
- width: 25px;
- height: 25px;
- font-size: 18px;
- text-align: center;
- line-height: 25px;
- color: #fdfdfd;
- background-color: rgba(255, 255, 255, 0.15);
- border-radius: 50%;
- cursor: pointer;
-}
-
-.parent{
-  display: flex;
-  flex-direction: row;
-  margin-left: 12%;
-  gap:25%;
-  flex-flow: wrap-reverse;
-}
-
-.child{
- width: 650px;
- text-align: left;
-}
-
-#gif{
-  z-index: 20;
-  width: 100px;
-  height: 100px;
-}
-
-.aniNgif{
-  position: relative;
-  margin-top: 50px;
-}
-
-#animation{
-  position: absolute;  
-  width: 70px;
-  height: 70px;
-  left: 15%;
-  top: 7%;
-}
-
-#open-services{  
- font-family: "Poppins-SemiBold";
- font-size: 25px;
- color: white; 
- cursor: pointer;
- font-size: 0.8em;
-}
-
-.wordCollage{
-  margin-left: 11%;
-  margin-right: 12%;
-  text-align: left;
-  margin-top: 10%;
-}
-
-.violet{
-  color: rgb(149, 53, 223);
-}
-
-#open-popup1{
- background: transparent;
- font-family: "Poppins-SemiBold";
- font-size: 25px;
- color: #caef38; 
- cursor: pointer;
- font-size: 0.8em;
-}
-
-#open-popup2{
-  background: transparent;
-  font-family: "Poppins-SemiBold";
-  font-size: 25px;
-  color: #18cd2d; 
-  cursor: pointer;
-  font-size: 0.8em;
  }
 
- #open-popup3{
-  background: transparent;
-  font-family: "Poppins-SemiBold";
-  font-size: 25px;
-  color: #3866ef; 
-  cursor: pointer;
-  font-size: 0.8em;
+ .reveal {
+   opacity: 0;
+   transform: translateY(-500px);
+   transition: opacity 0.8s, transform 0.8s;
+   position: relative;
+   padding-top: 20%;
+   padding-bottom: 20%;
+
  }
 
-.tabs-container {    
-   display: flex;
-   flex-direction: column;
-   align-items: center;    
-   height: 40vh;
-   font-family: "Poppins-Thin";
-    }
-  
-.tab-header {
- width:60%;
- border: none;
- outline: none;
- cursor: pointer;
- padding: 10px;
- text-align: center;
- font-family: "Poppins";
-   font-size: 1.5rem;
- position: relative; /* Add this line */
- background-color: transparent;
- color: white;
-}
+ .reveal.revealed {
+   opacity: 1;
+   transform: translateY(0);
+ }
 
-.researchTabs{
+ #circle1 {
+   position: absolute;
+   top: -80px;
+   left: 0%;
+   width: 100%
+ }
+
+ #circle2 {
+   position: absolute;
+   top: -110px;
+   left: 0%;
+   width: 100%;
+ }
+
+ #circle3 {
+   position: absolute;
+   top: -160px;
+   left: 0%;
+   width: 100%;
+ }
+
+ .bgblack {
+   position: fixed;
+   top: 0px;
+   left: 0px;
+   width: 100%;
+   height: 100%;
+   background-color: #131111;
+   opacity: 0;
+   transition: all 0.5 linear;
+   display: none;
+   z-index: 100;
+ }
+
+ .bgblack.visible {
+   opacity: 0.5;
+   display: block;
+ }
+
+ .service {
+   position: fixed;
+
+ }
+
+ .clickable-word {
+   color: white;
+   cursor: pointer;
+   text-decoration: none;
+ }
+
+ #image-container {
+   position: fixed;
+   margin-top: 1%;
+   z-index: 10;
+   left: 4%;
+ }
+
+ .popup {
+   position: fixed;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%) scale(1.2);
+   opacity: 0;
+   background: linear-gradient(to bottom right, #bdbaba, #5a5959);
+   border: 1px solid rgba(255, 255, 255, 0.15);
+   width: 650px;
+   padding: 20px 30px;
+   border-radius: 10px;
+   z-index: 0;
+   transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out 0ms, transform 300ms ease-in-out 0ms;
+ }
+
+ .popup.active {
+   transform: translate(-50%, -50%) scale(1);
+   opacity: 1;
+   transition: top 0ms ease-in-out 0ms, opacity 300ms ease-in-out 0ms, transform 300ms ease-in-out 0ms;
+   z-index: 1000;
+ }
+
+ .popup .close-btn {
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   width: 25px;
+   height: 25px;
+   font-size: 18px;
+   text-align: center;
+   line-height: 25px;
+   color: #fdfdfd;
+   background-color: rgba(255, 255, 255, 0.15);
+   border-radius: 50%;
+   cursor: pointer;
+ }
+
+ .parent {
    display: flex;
    flex-direction: row;
-}
- 
-.tab-header.active::after { /* Add this block */
- content: "";
- position: absolute;
- bottom: 0;
- left: 0;
- width: 100%;
- height: 3px; /* Height of the highlighter */
- background-color: blue; /* Color of the highlighter */
-}
+   margin-left: 12%;
+   gap: 25%;
+   flex-flow: wrap-reverse;
+ }
+
+ .child {
+   width: 650px;
+   text-align: left;
+ }
+
+ #gif {
+   z-index: 20;
+   width: 100px;
+   height: 100px;
+ }
+
+ .aniNgif {
+   position: relative;
+   margin-top: 50px;
+ }
+
+ #animation {
+   position: absolute;
+   width: 70px;
+   height: 70px;
+   left: 15%;
+   top: 7%;
+ }
+
+ #open-services {
+   font-family: "Poppins-SemiBold";
+   font-size: 25px;
+   color: white;
+   cursor: pointer;
+   font-size: 0.8em;
+ }
+
+ .wordCollage {
+   margin-left: 11%;
+   margin-right: 12%;
+   text-align: left;
+   margin-top: 10%;
+ }
+
+ .violet {
+   color: rgb(149, 53, 223);
+ }
+
+ #open-popup1 {
+   background: transparent;
+   font-family: "Poppins-SemiBold";
+   font-size: 25px;
+   color: #caef38;
+   cursor: pointer;
+   font-size: 0.8em;
+ }
+
+ #open-popup2 {
+   background: transparent;
+   font-family: "Poppins-SemiBold";
+   font-size: 25px;
+   color: #18cd2d;
+   cursor: pointer;
+   font-size: 0.8em;
+ }
+
+ #open-popup3 {
+   background: transparent;
+   font-family: "Poppins-SemiBold";
+   font-size: 25px;
+   color: #3866ef;
+   cursor: pointer;
+   font-size: 0.8em;
+ }
+
+ .tabs-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 40vh;
+   font-family: "Poppins-Thin";
+ }
+
+ .tab-header {
+   width: 60%;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 10px;
+   text-align: center;
+   font-family: "Poppins";
+   font-size: 1.5rem;
+   position: relative;
+   /* Add this line */
+   background-color: transparent;
+   color: white;
+ }
+
+ .researchTabs {
+   display: flex;
+   flex-direction: row;
+ }
+
+ .tab-header.active::after {
+   /* Add this block */
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   /* Height of the highlighter */
+   background-color: blue;
+   /* Color of the highlighter */
+ }
 
  .tab-content-container {
    text-align: left;
  }
- 
+
  .tab-content {
    display: none;
    padding: 10px;
-  
+
  }
- 
+
  .tab-content.active {
    display: block;
  }
- 
+
  .tab-inner-content {
    display: flex;
    flex-direction: column;
    align-items: center;
  }
 
- .bold{
-  font-weight: bold; 
+ .bold {
+   font-weight: bold;
  }
 
  .research.active::after {
- background-color: rgb(39, 186, 235);
-}
+   background-color: rgb(39, 186, 235);
+ }
 
-.design.active::after {
- background-color: red;
-}
+ .design.active::after {
+   background-color: red;
+ }
 
-.develop.active::after {
- background-color: green;
-}
+ .develop.active::after {
+   background-color: green;
+ }
 
-.tab-header.research.active::after,
-.tab-header.design.active::after,
-.tab-header.develop.active::after {
- content: "";
- position: absolute;
- bottom: 0;
- left: 0;
- width: 100%;
- height: 3px; /* Height of the highlighter */
-}
+ .tab-header.research.active::after,
+ .tab-header.design.active::after,
+ .tab-header.develop.active::after {
+   content: "";
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 100%;
+   height: 3px;
+   /* Height of the highlighter */
+ }
 
-.tab-header.active + .tab-content.active::after {
- display: block; /* Display the highlighter when both tab header and content are active */
-}
+ .tab-header.active+.tab-content.active::after {
+   display: block;
+   /* Display the highlighter when both tab header and content are active */
+ }
 
-.researchObj{
- display: flex;
- flex-direction: column;
- z-index: 0;
-}
-
-.researchDiv{
+ .researchObj {
    display: flex;
- flex-direction: row;
-}
+   flex-direction: column;
+   z-index: 0;
+ }
+
+ .researchDiv {
+   display: flex;
+   flex-direction: row;
+ }
 
 
-       #dropContentOne {
-           display: none;
-           width: 90%;
-           background: linear-gradient(to bottom right, #7b7b7b, #aeaeae);
-           height: 20vh;
-           border-radius: 5px;
-           box-shadow: #fdfdfd;
-       }
+ #dropContentOne {
+   display: none;
+   width: 90%;
+   background: linear-gradient(to bottom right, #7b7b7b, #aeaeae);
+   height: 20vh;
+   border-radius: 5px;
+   box-shadow: #fdfdfd;
+ }
 
-       #dropContentTwo {
-        display: none;
-        width: 90%;
-        background-color: grey;
-        height: 20vh;
-       }
+ #dropContentTwo {
+   display: none;
+   width: 90%;
+   background-color: grey;
+   height: 20vh;
+ }
 
-       #dropContentThree {
-        display: none;
-        width: 90%;
-        background-color: grey;
-        height: 20vh;
-       }
+ #dropContentThree {
+   display: none;
+   width: 90%;
+   background-color: grey;
+   height: 20vh;
+ }
 
-       #dropContentFour {
-        display: none;
-        width: 90%;
-        background-color: grey;
-        height: 20vh;
-       }
+ #dropContentFour {
+   display: none;
+   width: 90%;
+   background-color: grey;
+   height: 20vh;
+ }
 
-       #dropContentFive {
-        display: none;
-        width: 90%;
-        background-color: grey;
-        height: 20vh;
-       }
+ #dropContentFive {
+   display: none;
+   width: 90%;
+   background-color: grey;
+   height: 20vh;
+ }
 
-       #dropContentSix {
-        display: none;
-        width: 90%;
-        background-color: grey;
-        height: 20vh;
-       }
+ #dropContentSix {
+   display: none;
+   width: 90%;
+   background-color: grey;
+   height: 20vh;
+ }
 
-       #research{
-           display: flex;
-           flex-direction: column;
-           gap: 5px;
-       }
-       #design{
-           display:none;
-       }
-       #develop{
-           display:none;
-       }
-       .dropdownbutton {
-           display: flex;
-           flex-direction: column;
-           gap: 10px;
-       }
+ #research {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+ }
 
-       #hiddenOption {
-           display: none;
-       }
+ #design {
+   display: none;
+ }
 
-       #hiddenOptionLeft {
-           display: none;
-       }
+ #develop {
+   display: none;
+ }
 
-       #sideDivOne {
-           display: flex;
-           flex-direction: 'column';
-       }
+ .dropdownbutton {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+ }
 
-       #sideDivTwo {
-           display: flex;
-           flex-direction: 'column';
-       }
+ #hiddenOption {
+   display: none;
+ }
 
-       #servicesimg1{            
-           margin-left: 8%;
-           margin-bottom: 10%;
-       }
+ #hiddenOptionLeft {
+   display: none;
+ }
 
-       #servicesimg2{            
-           margin-left: 12%;
-           margin-bottom: 10%;
-       }
+ #sideDivOne {
+   display: flex;
+   flex-direction: 'column';
+ }
 
-       .explanation{
-       width: 65%
-       }
+ #sideDivTwo {
+   display: flex;
+   flex-direction: 'column';
+ }
 
-       .tick{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        font-family: "Poppins-Thin";
-        gap: 5px;
-       }
+ #servicesimg1 {
+   margin-left: 8%;
+   margin-bottom: 10%;
+ }
 
-       #tick{
-        
-        width: 18px;
-        height: 18px;
-       }
+ #servicesimg2 {
+   margin-left: 12%;
+   margin-bottom: 10%;
+ }
 
-       .small{
-        font-family: "Poppins-Thin";
-       }
+ .explanation {
+   width: 65%
+ }
 
-       .wordCollage{
-        margin-top: 5%;
-        line-height: 1.5;
-        font-family: "Poppins-bold";
-        font-weight: 50;
-        font-size: 2.2rem;
-       }
+ .tick {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   font-family: "Poppins-Thin";
+   gap: 5px;
+ }
 
-       #bar{
-        margin-top: 5%;
-        width:100%;
-        max-width: 1070px;
-        height: 500px;
-       }
+ #tick {
 
-       @media only screen and (max-width:1184px){
-        .initial{
-          line-height: 1em;
-        }
-       }
+   width: 18px;
+   height: 18px;
+ }
+
+ .small {
+   font-family: "Poppins-Thin";
+ }
+
+ .wordCollage {
+   margin-top: 5%;
+   line-height: 1.5;
+   font-family: "Poppins-bold";
+   font-weight: 50;
+   font-size: 2.2rem;
+ }
+
+ #bar {
+   margin-top: 5%;
+   width: 100%;
+   max-width: 1070px;
+   height: 500px;
+ }
+
+ @media only screen and (max-width:1184px) {
+   .initial {
+     line-height: 1em;
+   }
+ }

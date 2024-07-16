@@ -10,7 +10,7 @@
 
 <body>
 
-  <div class="heading">
+  <div class="heading" id="headingDiv">
     <div class="logoNname">
       <a href="../"><img id="logo" src="../Group 34.svg"></a>        
       <div>
@@ -23,13 +23,39 @@
 
     <div class="navigation">
       <span class="clickable-word">Services</span>
-            <div id="overlay" class="overlay">
-                <img id="overlayImage" src="../Frame 137.svg" alt="Overlay Image">
-            </div>
+          
         <a class="anchor_tag" href="">Works</a>
         <a class="anchor_tag" href="../aboutus/">About Us</a>
         
     </div>
+</div>
+
+<div id="overlay" class="overlay">
+
+<div class="heading" id="headingDiv">
+  <div class="logoNname">
+      <a href="../"><img id="logo" src="../Group 34.svg"></a>
+      <div>
+      <div id="image-container" style="display: none;">
+          <img src="../Frame 125.svg" alt="Image" id="image" />
+        </div>
+       </div>
+      <!-- <img src="Frame 45.svg" alt=""> -->
+  </div>
+
+  <div class="navigation">
+    <span class="clickable-word">Services</span>
+    
+      <a class="anchor_tag" href="../works/">Works</a>
+      <a class="anchor_tag" href="../aboutus/">About Us</a>
+      <!-- <div class="hamburger">
+          <div class="ham"></div>
+          <div class="ham"></div>
+      </div> -->
+  </div>
+</div>
+
+<img id="overlayImage" src="../Frame 137.svg" alt="Overlay Image">
 </div>
 
 <div class="content">
@@ -255,13 +281,14 @@
 
 .overlay {
       display: none; /* Hidden by default */
+      flex-direction: column;
       position: fixed;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.8); /* Transparent black */
-      justify-content: center;
+      /* justify-content: center; */
       align-items: center;
       z-index: 100; /* Ensures the overlay is on top of other elements */
   }
@@ -489,6 +516,9 @@ body{
   font-family: Raleway;
 }
 
+.hide {
+   display: none !important;
+ }
 
 </style>
 
@@ -508,13 +538,16 @@ document.documentElement.style.setProperty('--active-tab-index', 0);
 document.addEventListener('DOMContentLoaded', () => {
     const clickableWord = document.querySelector('.clickable-word');
     const overlay = document.getElementById('overlay');
-
+    const heading= document.getElementById("headingDiv");
     clickableWord.addEventListener('click', () => {
         overlay.style.display = 'flex'; // Show the overlay and image
+        
+      heading.classList.add('hide');
     });
 
     overlay.addEventListener('click', () => {
         overlay.style.display = 'none'; // Hide the overlay and image when clicked
+        heading.classList.remove('hide');
     });
 });
 
